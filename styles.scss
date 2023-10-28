@@ -1,0 +1,52 @@
+@import 'archivo.scss';
+$color-primario: #00ff37;
+$btn-primary: #00ff2a;
+
+
+$primary-color: #f825ff;
+
+
+h1 { color: $color-primario; a { text-decoration: none; } }
+
+@mixin estilo-borde {
+  border: 1px solid $color-primario;
+}
+
+.selector {
+  @include estilo-borde;
+}
+
+
+%estilo-compartido {
+  color: $color-primario;
+}
+
+.selector {
+  @extend %estilo-compartido;
+}
+
+
+$color-nuevo: darken($color-primario, 10%);
+div{
+  p{
+    color:$color-nuevo
+  }
+}
+
+$color-modificado: adjust-hue($color-primario, 180deg);
+
+div{
+  div{
+    background-color: $color-modificado
+
+  }
+}
+
+$is-active: true;
+
+.selector {
+  @if $is-active {
+    color: red;
+  }
+}
+

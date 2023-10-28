@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>LibroHub</title>
+    <link rel="stylesheet" type="text/css" href="archivo.css">
+    <link rel="stylesheet" type="text/css" href="styles.scss">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="display-4">Bienvenido a LibroHub</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <p>Explora nuestra colección de libros.</p>
+        </div>
+        <div class="col-md-6">
+            <p>Encuentra los libros que amas.</p>
+        </div>
+    </div>
+    <p class="lead text-primary">Descubre un mundo de lectura.</p>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>El caballero Carmelo</td>
+                <td>Abraham Valdelomar</td>
+                <td>S/. 100</td>
+            </tr>
+            <tr>
+                <td>La palabra del mudo</td>
+                <td>Julio Ramón Ribeyro</td>
+                <td>S/. 75</td>
+            </tr>
+        </tbody>
+    </table>
+ 
+    <div class="row">
+        <div class="col-md-6">
+            <img src="https://www.loqueleo.com/pe/uploads/2017/10/resized/800_9789972005220.jpg" alt="El caballero Carmelo" class="img-thumbnail">
+        </div>
+        <div class="col-md-6">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8iVRSKU7uK6SjI3_kbnHGVj3MsKAop3wWX2grYyyzSaw5qY72" alt="La palabra del mudo" class="img-thumbnail">
+        </div>
+    </div>
+    <div class="jumbotron">
+        <h2 class="display-5">Los mejores libros están en Libro Hub</h2>
+        <p class="lead">Toda la literatura nacional e internacional a los mejores precios.</p>
+    </div>
+    <div class="alert alert-success" role="alert">
+        "Para viajar lejos no hay mejor nave que un libro"
+    </div>
+
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal">
+        Ver detalles
+    </button>
+
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Detalles del Libro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>ISBN: 09788466234214</p>
+                    <p>Idioma: Español</p>
+                    <p>Tapa del libro: Dura</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
